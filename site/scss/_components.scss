@@ -10,6 +10,7 @@
 .faq-heading {
   text-align: center;
   font-size: rem(32px);
+  color: $primary-very-dark-desaturated-blue;
 }
 
 .faq-details {
@@ -28,6 +29,12 @@
 .faq-details > summary {
   font-size: rem(13px);
   list-style-type: none;
+  color: $primary-very-dark-desaturated-blue;
+
+  &:hover {
+    color: $primary-soft-red;
+    cursor: pointer;
+  }
 
   &::after {
     width: rem(10px);
