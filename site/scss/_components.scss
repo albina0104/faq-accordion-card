@@ -1,0 +1,68 @@
+@use 'base' as *;
+
+.faq-card {
+  background-color: white;
+  border-radius: rem(20px);
+  width: rem(328px);
+  padding: rem(25px);
+}
+
+.faq-heading {
+  text-align: center;
+  font-size: rem(32px);
+}
+
+.faq-details {
+  border-bottom: 1px solid $divider-light-grayish-blue;
+  padding: rem(20px) 0;
+
+  &:first-of-type {
+    margin-top: rem(20px);
+  }
+
+  &:last-of-type {
+    margin-bottom: rem(40px);
+  }
+}
+
+.faq-details > summary {
+  font-size: rem(13px);
+  list-style-type: none;
+
+  &::after {
+    width: rem(10px);
+    height: rem(16px);
+    background-image: url('../images/icon-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    display: block;
+    float: right;
+  }
+}
+
+.faq-details[open] > summary {
+  font-weight: bold;
+
+  &::after {
+    transform: rotate(180deg);
+  }
+}
+
+.faq-details > p {
+  color: $neutral-dark-grayish-blue;
+  font-size: rem(12px);
+  padding-top: rem(15px);
+  padding-right: 10px;
+}
+
+.attribution {
+  font-size: rem(11px);
+  text-align: center;
+  padding: rem(20px);
+  color: white;
+}
+
+.attribution a {
+  color: black;
+}
