@@ -6,12 +6,28 @@
   width: rem(328px);
   padding: rem(25px);
   box-shadow: 0 rem(30px) rem(50px) hsla(255, 50%, 25%, 0.5);
+  position: relative;
+
+  &::before {
+    background-image: url('../images/illustration-woman-online-mobile.svg'),
+      url('../images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center top, center bottom;
+    content: '';
+    display: block;
+    width: rem(237px);
+    height: rem(210px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -63%);
+  }
 }
 
 .faq-heading {
   text-align: center;
   font-size: rem(32px);
   color: $primary-very-dark-desaturated-blue;
+  margin-top: rem(105px);
 }
 
 .faq-details {
