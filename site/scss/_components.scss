@@ -7,12 +7,14 @@
   padding: rem(25px);
   box-shadow: 0 rem(30px) rem(50px) hsla(255, 50%, 25%, 0.5);
   position: relative;
+  margin-top: rem(110px);
 
   &::before {
     background-image: url('../images/illustration-woman-online-mobile.svg'),
       url('../images/bg-pattern-mobile.svg');
     background-repeat: no-repeat;
     background-position: center top, center bottom;
+    background-size: rem(237px) rem(180px), rem(240px) rem(104px);
     content: '';
     display: block;
     width: rem(237px);
