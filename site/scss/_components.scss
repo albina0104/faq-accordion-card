@@ -76,6 +76,11 @@
   list-style-type: none;
   color: $primary-very-dark-desaturated-blue;
 
+  &::marker,
+  &::-webkit-details-marker {
+    display: none;
+  }
+
   &:hover {
     color: $primary-soft-red;
     cursor: pointer;
