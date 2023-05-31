@@ -18,6 +18,12 @@ $font: 'Kumbh Sans', sans-serif;
   @return $remValue;
 }
 
+@mixin desktop {
+  @media screen and (min-width: rem(970px)) {
+    @content;
+  }
+}
+
 html {
   box-sizing: border-box;
 }

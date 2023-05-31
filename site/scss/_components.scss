@@ -9,6 +9,17 @@
   position: relative;
   margin-top: rem(110px);
 
+  @include desktop {
+    width: rem(923px);
+    padding-right: rem(100px);
+    padding-left: rem(475px);
+    background-image: url('../images/illustration-woman-online-desktop.svg'),
+      url('../images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: rem(430px) rem(359px), rem(966px) rem(945px);
+    background-position: top 55% left rem(-70px), left 1410% top 61%;
+  }
+
   &::before {
     background-image: url('../images/illustration-woman-online-mobile.svg'),
       url('../images/bg-pattern-mobile.svg');
@@ -22,6 +33,16 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -63%);
+
+    @include desktop {
+      background-image: url('../images/illustration-box-desktop.svg');
+      background-position: top 73% left rem(-48px);
+      background-size: rem(191px) rem(184px);
+      width: rem(430px);
+      height: rem(509px);
+      left: rem(170px);
+      top: 60%;
+    }
   }
 }
 
@@ -30,6 +51,11 @@
   font-size: rem(32px);
   color: $primary-very-dark-desaturated-blue;
   margin-top: rem(105px);
+
+  @include desktop {
+    margin-top: rem(39px);
+    text-align: left;
+  }
 }
 
 .faq-details {
