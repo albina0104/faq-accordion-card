@@ -1,16 +1,24 @@
 @use 'base' as *;
 
+main {
+  width: 90%;
+  max-width: rem(328px);
+
+  @include desktop {
+    width: rem(923px);
+    max-width: none;
+  }
+}
+
 .faq-card {
   background-color: white;
   border-radius: rem(20px);
-  width: rem(328px);
   padding: rem(25px);
   box-shadow: 0 rem(30px) rem(50px) hsla(255, 50%, 25%, 0.5);
   position: relative;
   margin-top: rem(110px);
 
   @include desktop {
-    width: rem(923px);
     padding-right: rem(100px);
     padding-left: rem(475px);
     margin-top: rem(20px);
